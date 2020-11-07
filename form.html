@@ -1,0 +1,174 @@
+<!-- 
+  Name: Kyle Pfromer
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+    <style>
+      .interests {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-light">
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/mypage_bootstrap.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/projects.html">Projects</a>
+        </li>
+      </ul>
+      <a href="https://github.com/kpfromer">
+        <img
+          src="https://image.flaticon.com/icons/png/512/25/25231.png"
+          width="30px"
+          height="30px"
+        />
+      </a>
+    </nav>
+
+    <div class="container">
+      <h1>Add Interest</h1>
+
+      <form method="GET" action="/mypage_bootstrap.html">
+        <div class="form-group">
+          <label for="interest">Interest Name</label>
+          <input type="text" class="form-control" id="interest" />
+        </div>
+
+        <div class="form-group">
+          <label for="about">Text About Interest</label>
+          <textarea class="form-control" id="about" rows="3"></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <input type="file" id="file" name="file" style="display: block" />
+          </div>
+          <div class="col">
+            <label for="tweets"># of Tweets:</label>
+            <select multiple class="form-control" id="tweets">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="exampleRadios"
+              id="exampleRadios1"
+              value="1"
+            />
+            <label class="form-check-label" for="exampleRadios1"> 1 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="exampleRadios"
+              id="exampleRadios2"
+              value="2"
+            />
+            <label class="form-check-label" for="exampleRadios2"> 2 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="exampleRadios"
+              id="exampleRadios3"
+              value="3"
+            />
+            <label class="form-check-label" for="exampleRadios3"> 3 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="exampleRadios"
+              id="exampleRadios4"
+              value="4"
+            />
+            <label class="form-check-label" for="exampleRadios4"> 4 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="exampleRadios"
+              id="exampleRadios5"
+              value="5"
+            />
+            <label class="form-check-label" for="exampleRadios5"> 5 </label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="text"
+                class="form-control"
+                id="password"
+                type="password"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div> -->
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <footer class="navbar navbar-expand-sm bg-light">
+      <div style="margin: 0 auto">
+        <a href="https://www.linkedin.com/in/kyle-pfromer/">
+          <img
+            src="https://image.flaticon.com/icons/png/512/174/174857.png"
+            height="30px"
+            width="30px"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

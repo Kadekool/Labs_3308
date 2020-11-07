@@ -1,0 +1,178 @@
+<!-- 
+  Name: Shreyas Kadekodi
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projects</title>
+    <style>
+      .interests {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="mypage_bootstrap.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="forms.html">Forms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="signup-modal/login.html">Sign Up Modal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tic-tac-toe/tic-tac-toe.html"
+          >Tic Tac Toe game</a
+        >
+      <div style="display: flex">
+        <a href="https://github.com/kadekool">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F25%2F25231.png&f=1&nofb=1"
+            style="margin-left: 88vw"
+            width="32"
+            height="32"
+          />
+        </a>
+      </div>
+    </ul>
+  </nav>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Add New Interest</h1>
+      </div>
+      <form action="/mypage_bootstrap.html" method="GET">
+        <div class="form-group">
+          <label for="Name"><b>Interest Name</b></label>
+          <input
+            type="Name"
+            class="form-control"
+            id="InputName"
+            aria-describedby="inputName"
+            placeholder="Name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"
+            ><b>Text About Interest</b></label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="exampleFormControlFile1">Upload Local Image</label>
+            <input
+              type="file"
+              class="form-control-file"
+              id="exampleFormControlFile1"
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="sel1">Number of Tweets to include:</label>
+            <select class="form-control" id="sel1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <br />
+          </div>
+        </div>
+        <p>On a scale of 1-5, how intersted in this are you?</p>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio1"
+            value="option1"
+          />
+          <label class="form-check-label" for="inlineRadio1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option2"
+          />
+          <label class="form-check-label" for="inlineRadio2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option3"
+          />
+          <label class="form-check-label" for="inlineRadio2">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option4"
+          />
+          <label class="form-check-label" for="inlineRadio2">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option5"
+          />
+          <label class="form-check-label" for="inlineRadio2">5</label>
+        </div>
+        <br />
+        <br />
+        <p>Login to Finish Submitting</p>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="form-group">
+              <input
+                type="username"
+                class="form-control"
+                id="exampleInputUsername1"
+                aria-describedby="UsernameHelp"
+                placeholder="Enter Username"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

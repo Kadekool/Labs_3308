@@ -1,0 +1,177 @@
+<!-- 
+  Name: Shreyas Kadekodi
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="mypage_bootstrap.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="forms.html">Forms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="signup-modal/login.html">Sign Up Modal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tic-tac-toe/tic-tac-toe.html"
+          >Tic Tac Toe game</a
+        >
+      </li>
+      <div style="display: flex">
+        <a href="https://github.com/kadekool">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F25%2F25231.png&f=1&nofb=1"
+            style="margin-left: 88vw"
+            width="32"
+            height="32"
+          />
+        </a>
+      </div>
+    </ul>
+  </nav>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Kadekodi, Shreyas</h1>
+      </div>
+      <br />
+      <div class="card">
+        <div class="card-body">
+          3 interesting facts about me are that I am on track to graduate in 3
+          years, I listen to movie soundtracks, and I am an avid player of the
+          Arkham games. I am studying computer science because I enjoy the work
+          and the potential of the field.
+        </div>
+      </div>
+      <br />
+      <h2>My Professional Profile</h2>
+      <br />
+      <a href="https://github.com/Kadekool">Shreyas's github</a>
+      <br />
+      <br />
+      <img
+        src="shreyas.jpg"
+        class="rounded-circle"
+        alt="Image of Shreyas Kadekodi"
+        width="500"
+        height="500"
+      />
+      <h3>My Interests</h3>
+      <table border="1">
+        <tr>
+          <th>Name of the Project</th>
+          <th>Technologies Used</th>
+        </tr>
+        <tr>
+          <td>KNN for digit recognition</td>
+          <td>Python</td>
+        </tr>
+        <tr>
+          <td>Baysian Parameter Optimization for Librec-Auto</td>
+          <td>Python, Java</td>
+        </tr>
+        <tr>
+          <td>Rust interpreter</td>
+          <td>Rust</td>
+        </tr>
+      </table>
+      <br />
+      <h4>Interests</h4>
+      <div class="container">
+        <button type="button" class="btn btn-info" style="margin-left: 85%">
+          Add interest
+        </button>
+        <div class="row">
+          <div class="col-sm" id="interest1">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="coding.jpg"
+                alt="Generic coding stuff"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Programming</h5>
+                <p class="card-text">I enjoy programming!</p>
+                <button type="button" class="btn btn-primary" onclick="addCard(this)">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm" id="interest2">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="bball.jpg"
+                alt="Generic Basketball Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Basketball</h5>
+                <p class="card-text">
+                  I enjoy playing basketball recreationally
+                </p>
+                <button type="button" class="btn btn-primary" onclick="addCard(this)">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm" id="interest3">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="hiking.jpg"
+                alt="Generic Hiking Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hiking</h5>
+                <p class="card-text">I enjoy hiking recreationally</p>
+                <button type="button" class="btn btn-primary" onclick="addCard(this)">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      style="display: flex"
+    >
+      <a
+        href="https://www.linkedin.com/in/shreyas-kadekodi/"
+        style="margin-left: auto; margin-right: auto"
+      >
+        <img
+          src="https://cdn.freebiesupply.com/logos/large/2x/linkedin-icon-logo-png-transparent.png"
+          width="32"
+          height="32"
+        />
+      </a>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function addCard(element) {
+        console.log(element);
+        var tweet = $('<div class="card"> <img src="data:image/png;base64,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" /> Twitter <button type="button" class="btn btn-primary" onclick="removeTwitter(this)">-</button> </div>').get()[0];
+
+        element.parentNode.appendChild(tweet)
+        console.log(tweet)
+      }
+
+      function removeTwitter(element) {
+        element.parentNode.remove();
+      }
+    </script>
+  </body>
+</html>
